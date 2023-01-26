@@ -1,0 +1,27 @@
+Saturday, 21st Jan - Authentication and Authorisation
+
+
+Authentication: Verify
+Authorisation: permissions to use some data etc.
+
+First step we do is registration for the site to remember the user.
+MIddleware: Is where we place the code.
+
+
+
+Authorization can be done in many ways.
+	0.	Token based: JasonWebToken
+	0.	Server side sessions.
+
+jwt.io - tokens
+Red colour text : is the header using all: HS256
+Pink colour data: is the payload data (user)
+Blue colour text : verification signature. The server will check this key, validate and decrypt the data (imp)
+
+
+
+NPM library: JWT
+https://www.npmjs.com/package/jsonwebtoken
+
+jwt.sign method is used for token.
+jwt.verfiy: validates the token and the secret key.
