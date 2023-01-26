@@ -1,0 +1,18 @@
+// authentication
+// authorization with token: 
+// usage of bcrypt
+
+
+class work:
+
+/auth/signup ==> bcrypt and do encryption to password
+/auth/login .. authenticate email first, if we have email => then authenticate password => if password matches, send token as response.
+
+/products: private route ( means they are authorized routes )
+(schema) - /products: id, name, company, total_qnty, price (schema)
+
+/auth/forgotpassword: private route ( same authorized routes) 
+// you will need clients email and token the client is sending
+// when the token is verified, search for email and validate, sent some random number as OTP/ send the simple password as response,
+
+
